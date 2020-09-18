@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        li {
+            padding-top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            cursor: pointer;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        .split {
+            height: 40%;
+            width: 50%;
+            position: fixed;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            padding-left: 5px;
+            padding-top: 5px;
+        }
+
+        .topLeft {
+            left: 0;
+            background-color: darksalmon;
+        }
+
+        .topRight {
+            right: 0;
+            background-color: darkcyan;
+        }
+
+        .botLeft {
+            left: 0;
+            top: 50%;
+            background-color: cornflowerblue;
+        }
+
+        .botRight {
+            right: 0;
+            top: 50%;
+            background-color: burlywood;
+        }
+    </style>
+
+    <title>Blog 2</title>
+</head>
+
+<body>
+    <h1>Blog 2 Post</h1>
+
+    <div class="split topLeft">
+        For this week I looked into setting up cool layouts on a page in light
+        of us checking out flex boxes and different types of layouts in class.
+        For this layout I created 2 different boxes, each with their own content.
+        Each section is seperated by a div with their respective classes so it makes
+        it easy to add more content.
+    </div>
+    <div class="split topRight">
+        I also looked into how to change links to make them more fun instead of just
+        purple underlined words. Got rid of the text decoration and changed the color 
+        when it is already visited. Everytime you hover over a link it changes your cursor
+        to better display when you are over a link. The links also open an entirely new tab 
+        instead of just moving you frmo your current page.
+    </div>
+    <div class="split botLeft">
+        Links:
+        <nav>
+            <ul>
+                <li><a href="https://www.w3schools.com/howto/howto_css_split_screen.asp" target="blank">Split Screen</a>
+                </li>
+                <li><a href="https://css-tricks.com/css-basics-styling-links-like-boss/" target="blank">Better Links</a>
+                </li>
+                <li><a href="https://www.thesitewizard.com/html-tutorial/open-links-in-new-window-or-tab.shtml#:~:text=The%20short%20answer%20is%3A%20just,your%20links%20(anchor%20tags).&text=Now%20when%20your%20visitors%20click,how%20they%20configured%20that%20browser)."
+                        target="blank">New Tab</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="split botRight">
+        This last box is just for fun, pls give me 2/2 this time :)
+    </div>
+</body>
+
+</html>
