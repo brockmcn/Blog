@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog 3</title>
+
+    <style>
+        body {
+            background-color: lightcoral;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .column {
+            float: left;
+            height: 100vh;
+            width: 49%;
+            padding: 3px;
+        }
+
+        iframe {
+            max-width: 30vw;
+            max-height: 30vh;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0"
+        nonce="0PwDa8dh"></script>
+
+    <h1>Blog 3</h1>
+    <div class="column">
+        <p>
+            For this week, I looked into embedding elements. The first type of elements I looked into embedding were
+            YouTube videos. This was pretty easy since YouTube basically includes the HTML code for you automatically.
+            Below is an embedded video I referenced on how to embed YouTube videos using HTML and CSS.
+        </p>
+        <iframe width="966" height="543" src="https://www.youtube.com/embed/9YffrCViTVk" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <div class="column">
+        <p>
+            Along with embedding YouTube videos, I also looked into how to embed social media stuff. Below is the video
+            I used as reference for embedding social media links. I practiced by embedding a facebook link, which is also done
+            below. Facebook was a little more difficult bcause it required me to include a Javascript SDK, but it's working!
+        </p>
+        <iframe width="966" height="543" src="https://www.youtube.com/embed/UoPUr3SyfDA" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <div class="fb-post"
+            data-href="https://www.facebook.com/VirginiaELECT/photos/a.10150925461894413/10158739996044413/?type=3"
+            data-show-text="true" data-width="">
+            <blockquote
+                cite="https://www.facebook.com/VirginiaELECT/photos/a.10150925461894413/10158739996044413/?type=3"
+                class="fb-xfbml-parse-ignore">
+                <p>Want to vote safely by mail? Request your absentee ballot at elections.virginia.gov/absentee today!
+                    #VAisForVoters #VaElections2020</p>Posted by <a
+                    href="https://www.facebook.com/VirginiaELECT/">Virginia Department of Elections</a> on&nbsp;<a
+                    href="https://www.facebook.com/VirginiaELECT/photos/a.10150925461894413/10158739996044413/?type=3">Thursday,
+                    September 24, 2020</a>
+            </blockquote>
+        </div>
+    </div>
+</body>
+
+</html>
