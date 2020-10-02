@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog 4</title>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        #block {
+            background-color: lightcoral;
+            width: 150px;
+            height: 20px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        #block > a {
+            background-color: white;
+            opacity: 0.5;
+            border-radius: 10px;
+            padding: 2px;
+        }
+
+        #gradient {
+            background: linear-gradient(to right, lightblue 0%, lightblue 60%, teal 60%, teal 100%);
+            width: 150px;
+            height: 20px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        #gradient > a {
+            color: black;
+            font-weight: bolder;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Blog 4</h1>
+    <p>One of the biggest things I learned this week was making divs transparent. I used this in my project 1 website to
+        make text boxes hover over images. I have messed around with transparency stuff before, but before I used
+        webkit-filter. For the project and for future, I have learned to just use "opacity: value range(0,1);" with 1
+        being opaque and 0 being completely transparent. Demonstrated below is the link I used to learn this, with a
+        transparent background inside of a div.
+    </p>
+    <div id="block"><a href="https://www.w3schools.com/css/css_image_transparency.asp">CSS Transparency</a></div>
+
+    <p>
+        Another thing I learned is how to use a gradient bbackground. A gradient background is essentially just an
+        element that can have multiple colors moving towards a specific direction. For this, I just use the "background:
+        linear-gradient()" function, which you fill with the direction and the colors percentage of where it starts and
+        ends. Below is a link I used as reference inside of a gradient div.
+    <div id="gradient"><a href="https://stackoverflow.com/questions/5054415/fill-div-with-2-colors">CSS Gradient</a></div>
+    </p>
+
+</body>
+
+</html>
