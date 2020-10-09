@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog 5</title>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        input:focus::placeholder {
+            display: none;
+        }
+
+        input:focus+label {
+            top: 100%;
+        }
+
+        label {
+            position: relative;
+            right: 75%;
+            pointer-events: none;
+        }
+
+        .box {
+            padding-top: 10px;
+            width: 200px;
+            height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Blog 5</h1>
+
+    <p>A cool thing I learned today that I found while looking into my project is placeholders for input text. A lot of
+        nice websites use placeholders in input areas instead of using labels (or they use lables to look like
+        placeholders). Below is an example of a text input with a placeholder that disappears when the input text
+        is being type in. I accomplish this by adding a placeholder tag to the input and access the placeholder by using
+        ::placeholder.
+    </p>
+    <a href="">Input with Placeholder</a>
+    <div class="box">
+        <input type="text" placeholder="Name">
+    </div>
+
+    <p>
+        However, using a placeholder did not satisfy what I needed for my project. I needed the placeholder to display
+        above the input area once selected, but placeholders stay inside the input. To fix this, I replaced placeholder
+        with a label and positioned the label inside of the input. A challenge I then ran into was accessing the label's
+        attributes on the input's focus. This is where I learned a neat trick in css in order to accomplish that. You
+        can add a '+ class/id/element' after another element. So for my project, I used 'input:focus + label'. Below is
+        also an example of me changing the label position on input focus. The only downside is (another challenge I
+        figured
+        out) that the label needs to come after the input in the html.
+    </p>
+    <a href="">Input Label Movement</a>
+    <div class="box">
+        <input type="text">
+        <label>Name</label>
+    </div>
+</body>
+
+</html>
